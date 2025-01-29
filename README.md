@@ -39,13 +39,60 @@ After generation, your project will have the following structure:
 
 ```
 {{ cookiecutter.project_slug }}/
+│── data/                  # Raw & processed data
+│   ├── raw/               # Unmodified original data
+│   ├── processed/         # Cleaned/engineered data
+│   ├── interim/           # Intermediate data (e.g., feature selection)
+│   ├── external/          # External datasets (e.g., APIs, external sources)
+│
+│── notebooks/             # Jupyter notebooks
+│   ├── 01_exploratory_analysis.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_model_training.ipynb
+│   ├── 04_evaluation.ipynb
+│
 │── src/                   # Source code
+│   ├── __init__.py
+│   ├── data/              # Data processing scripts
+│   │   ├── make_dataset.py
+│   │   ├── preprocess.py
+│   ├── features/          # Feature engineering
+│   │   ├── build_features.py
+│   ├── models/            # Model training and evaluation
+│   │   ├── train_model.py
+│   │   ├── predict.py
+│   ├── visualization/     # Data visualization
+│   │   ├── visualize.py
+│
 │── tests/                 # Unit tests
-│── docs/                  # Documentation
-│── .gitignore             # Ignore unnecessary files
-│── README.md              # Project documentation
-│── setup.py               # Package configuration
+│   ├── test_data.py
+│   ├── test_features.py
+│   ├── test_models.py
+│
+│── config/                # Configuration files
+│   ├── params.yaml        # Hyperparameters
+│   ├── config.json        # Model settings
+│
+│── reports/               # Reports and results
+│   ├── figures/           # Plots, graphs, and visualizations
+│   ├── final_report.pdf
+│
+│── deployment/            # Deployment scripts
+│   ├── docker/
+│   │   ├── Dockerfile
+│   │   ├── docker-compose.yaml
+│   ├── api/               # API for serving models
+│   │   ├── app.py         # FastAPI/Flask app
+│   ├── inference.py       # Run model inference
+│
 │── requirements.txt       # Dependencies
+│── pyproject.toml         # Package metadata
+│── setup.py               # Package installer
+│── README.md              # Project documentation
+│── .gitignore             # Ignore unnecessary files
+│── .env                   # Environment variables (e.g., API keys)
+│── Makefile               # Automation commands
+
 ```
 
 ## 📝 Customization
