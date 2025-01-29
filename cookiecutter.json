@@ -1,5 +1,6 @@
 {
     "project_name": "Cookiecutter FCS Template",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "author": "Ferran Colomé Sanz"
+    "author": "Ferran Colomé Sanz",
+    "package_name": "{{ cookiecutter.project_slug }}"
   }
