@@ -24,7 +24,7 @@ pip install cookiecutter
 To create a new project using this template:
 
 ```sh
-cookiecutter gh:yourusername/{{ cookiecutter.project_slug }}
+cookiecutter gh:fcolome14/{{ cookiecutter.project_slug }}
 ```
 
 You will be prompted to enter:
