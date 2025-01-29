@@ -1,6 +1,7 @@
 {
-    "project_name": "Cookiecutter FCS Template",
+    "project_name": "Data Science Project Template",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "package_name": "{{ cookiecutter.project_slug }}",
     "author": "Ferran Colomé Sanz",
-    "package_name": "{{ cookiecutter.project_slug }}"
+    "python_version": "3.10.7"
   }
