@@ -2,6 +2,7 @@
     "project_name": "Data Science Project Template",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "package_name": "{{ cookiecutter.project_slug }}",
-    "author": "Ferran Colomé Sanz",
+    "author": "Colomé Sanz, Ferran ",
+    "email": "ferrancolomsanz@gmail.com",
     "python_version": "3.10.7"
   }
